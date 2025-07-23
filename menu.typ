@@ -7,4 +7,5 @@ B:Programming Lessons
 M: "Programming Lessons"
  :LUA_MENU "Lua Language"
  :GO_MENU "Go Language"
+ :SH_MENU "sh Language"
 
