@@ -3,4 +3,5 @@ Programming Lessons
 C
 Go
 Lua
+Perl
 sh

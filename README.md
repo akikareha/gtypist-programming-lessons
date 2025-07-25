@@ -15,8 +15,9 @@ Currently included lessons:
 - C reserved words
 - Go reserved words, Go predeclared identifiers
 - Lua reserved words
+- Perl reserved words
 - sh reservedwords, sh selected commands
-- *(More coming soon: Python, JavaScript, Perl, etc.)*
+- *(More coming soon: Python, JavaScript, Rust, etc.)*
 
 Each `.typ` file in `langs` directory contains structured lessons that focus
 on one language at a time.

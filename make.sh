@@ -34,6 +34,16 @@ cat tmp/go_menu.typ tmp/go_reserved_words.typ tmp/go_pi_constants.typ tmp/go_pi_
 cat tmp/lua_menu.typ tmp/lua_reserved_words.typ >langs/lua.typ
 
 #
+# Perl
+#
+
+./make_menu.pl --title "Perl" words/perl_reserved_words.txt >tmp/perl_menu.typ
+
+./make_lesson.pl words/perl_reserved_words.txt >tmp/perl_reserved_words.typ
+
+cat tmp/perl_menu.typ tmp/perl_reserved_words.typ >langs/perl.typ
+
+#
 # sh
 #
 
@@ -54,4 +64,4 @@ cat tmp/sh_menu.typ tmp/sh_reserved_words.typ tmp/sh_selected_commands.typ >lang
 # Combine
 #
 
-cat tmp/menu.typ langs/c.typ langs/go.typ langs/lua.typ langs/sh.typ >programming.typ
+cat tmp/menu.typ langs/c.typ langs/go.typ langs/lua.typ langs/perl.typ langs/sh.typ >programming.typ
