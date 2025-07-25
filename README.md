@@ -12,12 +12,14 @@ efficiently.
 
 Currently included lessons:
 
-- Go reserved words
+- C reserved words
+- Go reserved words, Go predeclared identifiers
 - Lua reserved words
-- *(More coming soon: Python, JavaScript, C, etc.)*
+- sh reservedwords, sh selected commands
+- *(More coming soon: Python, JavaScript, Perl, etc.)*
 
-Each `.typ` file contains structured lessons that focus on one language at a
-time.
+Each `.typ` file in `langs` directory contains structured lessons that focus
+on one language at a time.
 
 ## Requirements
 
@@ -30,7 +32,7 @@ time.
 
 ```sh
 gtypist programming.typ
-gtypist go.typ
+gtypist langs/go.typ
 ```
 
 ## About the Lessons
@@ -42,13 +44,13 @@ gtypist go.typ
     * Module functions (math.sqrt, os.path.join, etc.)
     * Phrase-style lessons with realistic code-like patterns
 
-## Combining Lessons
+## Generating Lessons
 
 To generate a unified `.typ` file containing all available lessons, use the
-provided `combine.sh` script:
+provided `make.sh` script:
 
 ```sh
-./combine.sh
+./make.sh
 ```
 
 This will create a file called `programming.typ`, which you can run directly:
@@ -62,8 +64,8 @@ The file includes a top-level menu and all included lesson files.
 You can also run individual lesson files:
 
 ```sh
-gtypist lua.typ
-gtypist go.typ
+gtypist langs/lua.typ
+gtypist langs/go.typ
 ```
 
 ## Roadmap
@@ -76,7 +78,7 @@ gtypist go.typ
 ## Contributing
 
 Contributions are welcome!  
-Feel free to submit `.typ` files for other languages, improvements, or
+Feel free to submit words files for other languages, improvements, or
 corrections.
 
 Please follow the existing lesson structure and keep lesson files simple and

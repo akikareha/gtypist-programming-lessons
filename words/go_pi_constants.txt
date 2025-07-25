@@ -1,0 +1,8 @@
+Go
+Go Constants (Predeclared Identifiers)
+
+true
+false
+iota
+nil
+_

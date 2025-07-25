@@ -1,333 +1,395 @@
-#
-# Menu of Programming Lessons for GNU Typist
-#
-
 *:MENU
 B:Programming Lessons
+
 M: "Programming Lessons"
- :LUA_MENU "Lua Language"
- :GO_MENU "Go Language"
- :SH_MENU "sh Language"
- :C_MENU "C Language"
+ :C_MENU "C"
+ :GO_MENU "Go"
+ :LUA_MENU "Lua"
+ :SH_MENU "sh"
 
-#
-# Lua Lessons for GNU Typist
-#
+*:C_MENU
+B:C
 
-*:LUA_MENU
-B:Lua Lessons
-M: "Lua Lessons"
- :LUA_RESERVED_WORDS "Lua Reserved Words"
+M: UP=MENU "C"
+ :C_RESERVED_WORDS "C Reserved Words"
 
-#
-# Lua Reserved Words
-#
+*:C_RESERVED_WORDS
+B:C Reserved Words
 
-*:LUA_RESERVED_WORDS
-B:Lua Reserved Words
-T:             Lua Reserved Words
+T:                       C Reserved Words
  :
- :1:  and     break  do        else   elseif  end
- :2:  false   for    function  goto   if
- :3:  in      local  nil       not    or      repeat
- :4:  return  then   true      until  while
+ : 1:   auto      break     case      char      const     continue
+ : 2:   default   do        double    else      enum      extern
+ : 3:   float     for       goto      if        inline    int
+ : 4:   long      register  restrict  return    short     signed
+ : 5:   sizeof    static    struct    switch    typedef   union
+ : 6:   unsigned  void      volatile  while
  :
- :                  22 words
+ :                           34 words
 
-I:Lua Reserved Words 1
-D:and and and and break break break break do do do do
- :else else else else elseif elseif elseif elseif end end end end
+I:C Reserved Words 1
+D:auto auto auto auto
+ :break break break break
+ :case case case case
+ :char char char char
+ :const const const const
+ :continue continue continue continue
 
-I:Lua Reserved Words 2
-D:false false false false for for for for function function function function
- :goto goto goto goto if if if if
+I:C Reserved Words 2
+D:default default default default
+ :do do do do
+ :double double double double
+ :else else else else
+ :enum enum enum enum
+ :extern extern extern extern
 
-I:Lua Reserved Words 3
-D:in in in in local local local local nil nil nil nil
- :not not not not or or or or repeat repeat repeat repeat
+I:C Reserved Words 3
+D:float float float float
+ :for for for for
+ :goto goto goto goto
+ :if if if if
+ :inline inline inline inline
+ :int int int int
 
-I:Lua Reserved Words 4
-D:return return return return then then then then true true true true
- :until until until until while while while while
+I:C Reserved Words 4
+D:long long long long
+ :register register register register
+ :restrict restrict restrict restrict
+ :return return return return
+ :short short short short
+ :signed signed signed signed
+
+I:C Reserved Words 5
+D:sizeof sizeof sizeof sizeof
+ :static static static static
+ :struct struct struct struct
+ :switch switch switch switch
+ :typedef typedef typedef typedef
+ :union union union union
+
+I:C Reserved Words 6
+D:unsigned unsigned unsigned unsigned
+ :void void void void
+ :volatile volatile volatile volatile
+ :while while while while
 
 Q:Repeat this lesson [Y/N] ?
-N:LUA_MENU
-G:LUA_RESERVED_WORDS
-
-#
-# Go Lessons for GNU Typist
-#
+N:C_MENU
+G:C_RESERVED_WORDS
 
 *:GO_MENU
-B:Go Lessons
-M: "Go Lessons"
- :GO_RESERVED_WORDS "Go Reserved Words"
- :GO_PI_CONSTANTS "Go Constants (Predeclared Identifiers)"
- :GO_PI_TYPES "Go Types (Predeclared Identifiers)"
- :GO_PI_FUNCTIONS "Go Functions (Predeclared Identifiers)"
+B:Go
 
-#
-# Go Reserved Words
-#
+M: UP=MENU "Go"
+ :GO_RESERVED_WORDS "Go Reserved Words"
+ :GO_CONSTANTS_PREDECLARED_IDENTIFIERS_ "Go Constants (Predeclared Identifiers)"
+ :GO_TYPES_PREDECLARED_IDENTIFIERS_ "Go Types (Predeclared Identifiers)"
+ :GO_FUNCTIONS_PREDECLARED_IDENTIFIERS_ "Go Functions (Predeclared Identifiers)"
 
 *:GO_RESERVED_WORDS
 B:Go Reserved Words
-T:                     Go Reserved Words
+
+T:                               Go Reserved Words
  :
- :1:  break  default  func      interface  select       case
- :2:  defer  go       map       struct     chan         else
- :3:  goto   package  switch    const      fallthrough  if
- :4:  range  type     continue  for        import       return  var
+ : 1:   break        default      func         interface    select       case
+ : 2:   defer        go           map          struct       chan         else
+ : 3:   goto         package      switch       const        fallthrough  if
+ : 4:   range        type         continue     for          import       return
+ : 5:   var
  :
- :                           25 words
+ :                                    25 words
 
 I:Go Reserved Words 1
-D:break break break break default default default default func func func func
- :interface interface interface interface select select select select
+D:break break break break
+ :default default default default
+ :func func func func
+ :interface interface interface interface
+ :select select select select
  :case case case case
 
 I:Go Reserved Words 2
-D:defer defer defer defer go go go go map map map map
- :struct struct struct struct chan chan chan chan else else else else
+D:defer defer defer defer
+ :go go go go
+ :map map map map
+ :struct struct struct struct
+ :chan chan chan chan
+ :else else else else
 
 I:Go Reserved Words 3
-D:goto goto goto goto package package package package
- :switch switch switch switch const const const const
- :fallthrough fallthrough fallthrough fallthrough if if if if
+D:goto goto goto goto
+ :package package package package
+ :switch switch switch switch
+ :const const const const
+ :fallthrough fallthrough fallthrough fallthrough
+ :if if if if
 
 I:Go Reserved Words 4
-D:range range range range type type type type
- :continue continue continue continue for for for for
- :import import import import return return return return var var var var
+D:range range range range
+ :type type type type
+ :continue continue continue continue
+ :for for for for
+ :import import import import
+ :return return return return
+
+I:Go Reserved Words 5
+D:var var var var
 
 Q:Repeat this lesson [Y/N] ?
 N:GO_MENU
 G:GO_RESERVED_WORDS
 
-#
-# Go Constants (Predeclared Identifiers)
-#
-
-*:GO_PI_CONSTANTS
+*:GO_CONSTANTS_PREDECLARED_IDENTIFIERS_
 B:Go Constants (Predeclared Identifiers)
+
 T:Go Constants (Predeclared Identifiers)
  :
- :    1:  true  false  iota  nil  _
+ : 1:   true   false  iota   nil    _
  :
- :              5 words
+ :               5 words
 
-I:Go Constants (Predeclared Identifiers)
-D:true true true true false false false false iota iota iota iota
- :nil nil nil nil _ _ _ _
+I:Go Constants (Predeclared Identifiers) 1
+D:true true true true
+ :false false false false
+ :iota iota iota iota
+ :nil nil nil nil
+ :_ _ _ _
 
 Q:Repeat this lesson [Y/N] ?
 N:GO_MENU
-G:GO_PI_CONSTANTS
+G:GO_CONSTANTS_PREDECLARED_IDENTIFIERS_
 
-#
-# Go Types (Predeclared Identifiers)
-#
-
-*:GO_PI_TYPES
+*:GO_TYPES_PREDECLARED_IDENTIFIERS_
 B:Go Types (Predeclared Identifiers)
-T:       Go Types (Predeclared Identifiers)
+
+T:                    Go Types (Predeclared Identifiers)
  :
- :1:  bool     byte     complex64  complex128  error
- :2:  float32  float64  int        int8        int16
- :3:  int32    int64    rune       string      uint
- :4:  uint8    uint16   uint32     uint64      uintptr
+ : 1:   bool        byte        complex64   complex128  error       float32
+ : 2:   float64     int         int8        int16       int32       int64
+ : 3:   rune        string      uint        uint8       uint16      uint32
+ : 4:   uint64      uintptr
  :
- :                    20 words
+ :                                 20 words
 
 I:Go Types (Predeclared Identifiers) 1
-D:bool bool bool bool byte byte byte byte
+D:bool bool bool bool
+ :byte byte byte byte
  :complex64 complex64 complex64 complex64
  :complex128 complex128 complex128 complex128
  :error error error error
+ :float32 float32 float32 float32
 
 I:Go Types (Predeclared Identifiers) 2
-D:float32 float32 float32 float32 float64 float64 float64 float64
- :int int int int int8 int8 int8 int8 int16 int16 int16 int16
+D:float64 float64 float64 float64
+ :int int int int
+ :int8 int8 int8 int8
+ :int16 int16 int16 int16
+ :int32 int32 int32 int32
+ :int64 int64 int64 int64
 
 I:Go Types (Predeclared Identifiers) 3
-D:int32 int32 int32 int32 int64 int64 int64 int64 rune rune rune rune
- :string string string string uint uint uint uint
+D:rune rune rune rune
+ :string string string string
+ :uint uint uint uint
+ :uint8 uint8 uint8 uint8
+ :uint16 uint16 uint16 uint16
+ :uint32 uint32 uint32 uint32
 
 I:Go Types (Predeclared Identifiers) 4
-D:uint8 uint8 uint8 uint8 uint16 uint16 uint16 uint16
- :uint32 uint32 uint32 uint32 uint64 uint64 uint64 uint64
+D:uint64 uint64 uint64 uint64
  :uintptr uintptr uintptr uintptr
 
 Q:Repeat this lesson [Y/N] ?
 N:GO_MENU
-G:GO_PI_TYPES
+G:GO_TYPES_PREDECLARED_IDENTIFIERS_
 
-#
-# Go Functions (Predeclared Identifiers)
-#
-
-*:GO_PI_FUNCTIONS
+*:GO_FUNCTIONS_PREDECLARED_IDENTIFIERS_
 B:Go Functions (Predeclared Identifiers)
-T:    Go Functions (Predeclared Identifiers)
+
+T:         Go Functions (Predeclared Identifiers)
  :
- :1:  append  cap    close    complex  copy
- :2:  delete  imag   len      make     new
- :3:  panic   print  println  real     recover
+ : 1:   append   cap      close    complex  copy     delete
+ : 2:   imag     len      make     new      panic    print
+ : 3:   println  real     recover
  :
- :                 15 words
+ :                        15 words
 
 I:Go Functions (Predeclared Identifiers) 1
-D:append append append append cap cap cap cap close close close close
- :complex complex complex complex copy copy copy copy
+D:append append append append
+ :cap cap cap cap
+ :close close close close
+ :complex complex complex complex
+ :copy copy copy copy
+ :delete delete delete delete
 
 I:Go Functions (Predeclared Identifiers) 2
-D:delete delete delete delete imag imag imag imag len len len len
- :make make make make new new new new
+D:imag imag imag imag
+ :len len len len
+ :make make make make
+ :new new new new
+ :panic panic panic panic
+ :print print print print
 
 I:Go Functions (Predeclared Identifiers) 3
-D:panic panic panic panic print print print print
- :println println println println real real real real
+D:println println println println
+ :real real real real
  :recover recover recover recover
 
 Q:Repeat this lesson [Y/N] ?
 N:GO_MENU
-G:GO_PI_FUNCTIONS
+G:GO_FUNCTIONS_PREDECLARED_IDENTIFIERS_
 
-#
-# sh Lessons for GNU Typist
-#
+*:LUA_MENU
+B:Lua
+
+M: UP=MENU "Lua"
+ :LUA_RESERVED_WORDS "Lua Reserved Words"
+
+*:LUA_RESERVED_WORDS
+B:Lua Reserved Words
+
+T:                      Lua Reserved Words
+ :
+ : 1:   and       break     do        else      elseif    end
+ : 2:   false     for       function  goto      if        in
+ : 3:   local     nil       not       or        repeat    return
+ : 4:   then      true      until     while
+ :
+ :                           22 words
+
+I:Lua Reserved Words 1
+D:and and and and
+ :break break break break
+ :do do do do
+ :else else else else
+ :elseif elseif elseif elseif
+ :end end end end
+
+I:Lua Reserved Words 2
+D:false false false false
+ :for for for for
+ :function function function function
+ :goto goto goto goto
+ :if if if if
+ :in in in in
+
+I:Lua Reserved Words 3
+D:local local local local
+ :nil nil nil nil
+ :not not not not
+ :or or or or
+ :repeat repeat repeat repeat
+ :return return return return
+
+I:Lua Reserved Words 4
+D:then then then then
+ :true true true true
+ :until until until until
+ :while while while while
+
+Q:Repeat this lesson [Y/N] ?
+N:LUA_MENU
+G:LUA_RESERVED_WORDS
 
 *:SH_MENU
-B:sh Lessons
-M: "sh Lessons"
+B:sh
+
+M: UP=MENU "sh"
  :SH_RESERVED_WORDS "sh Reserved Words"
  :SH_SELECTED_COMMANDS "sh Selected Commands"
 
-#
-# sh Reserved Words
-#
-
 *:SH_RESERVED_WORDS
 B:sh Reserved Words
-T:        sh Reserved Words
+
+T:             sh Reserved Words
  :
- :1:  !     case  do     done   elif
- :2:  else  esac  fi     for    if
- :3:  in    then  until  while
+ : 1:   !      case   do     done   elif   else
+ : 2:   esac   fi     for    if     in     then
+ : 3:   until  while
  :
- :            14 words
+ :                  14 words
 
 I:sh Reserved Words 1
-D:! ! ! ! case case case case do do do do
- :done done done done elif elif elif elif
+D:! ! ! !
+ :case case case case
+ :do do do do
+ :done done done done
+ :elif elif elif elif
+ :else else else else
 
 I:sh Reserved Words 2
-D:else else else else esac esac esac esac fi fi fi fi
- :for for for for if if if if
+D:esac esac esac esac
+ :fi fi fi fi
+ :for for for for
+ :if if if if
+ :in in in in
+ :then then then then
 
 I:sh Reserved Words 3
-D:in in in in then then then then
- :until until until until while while while while
+D:until until until until
+ :while while while while
 
 Q:Repeat this lesson [Y/N] ?
 N:SH_MENU
 G:SH_RESERVED_WORDS
 
-#
-# sh Reserved Words
-#
-
 *:SH_SELECTED_COMMANDS
 B:sh Selected Commands
-T:              sh Selected Commands
+
+T:               sh Selected Commands
  :
- :1:  echo  cat   tr     sort   uniq
- :2:  cp    mv    rm     touch  mkdir   rmdir   find
- :3:  grep  sed   awk    head   tail    wc
- :4:  ps    kill  sleep  date   uptime  whoami  id
- :5:  pwd   cd    env    exit   tee     yes
+ : 1:   echo    cat     tr      sort    uniq    cp
+ : 2:   mv      rm      touch   mkdir   rmdir   find
+ : 3:   grep    sed     awk     head    tail    wc
+ : 4:   ps      kill    sleep   date    uptime  whoami
+ : 5:   id      pwd     cd      env     exit    tee
+ : 6:   yes
  :
- :                    31 words
+ :                     31 words
 
 I:sh Selected Commands 1
-D:echo echo echo echo cat cat cat cat tr tr tr tr
- :sort sort sort sort uniq uniq uniq uniq
+D:echo echo echo echo
+ :cat cat cat cat
+ :tr tr tr tr
+ :sort sort sort sort
+ :uniq uniq uniq uniq
+ :cp cp cp cp
 
 I:sh Selected Commands 2
-D:cp cp cp cp mv mv mv mv rm rm rm rm touch touch touch touch
- :mkdir mkdir mkdir mkdir rmdir rmdir rmdir rmdir find find find find
+D:mv mv mv mv
+ :rm rm rm rm
+ :touch touch touch touch
+ :mkdir mkdir mkdir mkdir
+ :rmdir rmdir rmdir rmdir
+ :find find find find
 
 I:sh Selected Commands 3
-D:grep grep grep grep sed sed sed sed awk awk awk awk
- :head head head head tail tail tail tail wc wc wc wc
+D:grep grep grep grep
+ :sed sed sed sed
+ :awk awk awk awk
+ :head head head head
+ :tail tail tail tail
+ :wc wc wc wc
 
 I:sh Selected Commands 4
-D:ps ps ps ps kill kill kill kill sleep sleep sleep sleep
- :date date date date uptime uptime uptime uptime
- :whoami whoami whoami whoami id id id id
+D:ps ps ps ps
+ :kill kill kill kill
+ :sleep sleep sleep sleep
+ :date date date date
+ :uptime uptime uptime uptime
+ :whoami whoami whoami whoami
 
 I:sh Selected Commands 5
-D:pwd pwd pwd pwd cd cd cd cd env env env env
- :exit exit exit exit tee tee tee tee yes yes yes yes
+D:id id id id
+ :pwd pwd pwd pwd
+ :cd cd cd cd
+ :env env env env
+ :exit exit exit exit
+ :tee tee tee tee
+
+I:sh Selected Commands 6
+D:yes yes yes yes
 
 Q:Repeat this lesson [Y/N] ?
 N:SH_MENU
 G:SH_SELECTED_COMMANDS
-
-#
-# C Lessons for GNU Typist
-#
-
-*:C_MENU
-B:C Lessons
-M: "C Lessons"
- :C_RESERVED_WORDS "C Reserved Words"
-
-#
-# C Reserved Words
-#
-
-*:C_RESERVED_WORDS
-B:C Reserved Words
-T:             C Reserved Words
- :
- :1:  auto      break     case      char    const    continue
- :2:  default   do        double    else    enum     extern
- :3:  float     for       goto      if      inline   int
- :4:  long      register  restrict  return  short    signed
- :5:  sizeof    static    struct    switch  typedef  union
- :6:  unsigned  void      volatile  while
- :
- :                  32 words
-
-I:C Reserved Words 1
-D:auto auto auto auto break break break break case case case case
- :char char char char const const const const
- :continue continue continue continue
-
-I:C Reserved Words 2
-D:default default default default do do do do double double double double
- :else else else else enum enum enum enum extern extern extern extern
-
-I:C Reserved Words 3
-D:float float float float for for for for goto goto goto goto
- :if if if if inline inline inline inline int int int int
-
-I:C Reserved Words 4
-D:long long long long register register register register
- :restrict restrict restrict restrict return return return return
- :short short short short signed signed signed signed
-
-I:C Reserved Words 5
-D:sizeof sizeof sizeof sizeof static static static static
- :struct struct struct struct switch switch switch switch
- :typedef typedef typedef typedef union union union union
-
-I:C Reserved Words 6
-D:unsigned unsigned unsigned unsigned void void void void
- :volatile volatile volatile volatile while while while while
-
-Q:Repeat this lesson [Y/N] ?
-N:C_MENU
-G:C_RESERVED_WORDS
 
