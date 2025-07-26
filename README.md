@@ -16,8 +16,9 @@ Currently included lessons:
 - Go reserved words, Go predeclared identifiers
 - Lua reserved words
 - Perl reserved words
+- Python reserved words
 - sh reservedwords, sh selected commands
-- *(More coming soon: Python, JavaScript, Rust, etc.)*
+- *(More coming soon: JavaScript, Rust, C++, etc.)*
 
 Each `.typ` file in `langs` directory contains structured lessons that focus
 on one language at a time.
@@ -71,7 +72,7 @@ gtypist langs/go.typ
 
 ## Roadmap
 
-- Add Python and JavaScript reserved words
+- Add JavaScript reserved words
 - Add standard library vocabulary lessons
 - Group by domain (e.g. math, strings, I/O)
 - Optional code-style phrase typing (e.g. `if x > 0: print("yes")`)

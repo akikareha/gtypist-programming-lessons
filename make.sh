@@ -44,6 +44,16 @@ cat tmp/lua_menu.typ tmp/lua_reserved_words.typ >langs/lua.typ
 cat tmp/perl_menu.typ tmp/perl_reserved_words.typ >langs/perl.typ
 
 #
+# Python
+#
+
+./make_menu.pl --title "Python" words/python_reserved_words.txt >tmp/python_menu.typ
+
+./make_lesson.pl words/python_reserved_words.txt >tmp/python_reserved_words.typ
+
+cat tmp/python_menu.typ tmp/python_reserved_words.typ >langs/python.typ
+
+#
 # sh
 #
 
@@ -64,4 +74,4 @@ cat tmp/sh_menu.typ tmp/sh_reserved_words.typ tmp/sh_selected_commands.typ >lang
 # Combine
 #
 
-cat tmp/menu.typ langs/c.typ langs/go.typ langs/lua.typ langs/perl.typ langs/sh.typ >programming.typ
+cat tmp/menu.typ langs/c.typ langs/go.typ langs/lua.typ langs/perl.typ langs/python.typ langs/sh.typ >programming.typ
